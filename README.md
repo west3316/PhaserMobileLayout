@@ -15,7 +15,7 @@ layout for Phaser by YAML config file, only support mobile devices
 - load layout script
   - UIConfig.js (parse config)
   - UICreator.js (create Phaser object by UIConfig result)
-  - Shape.js (Phaser.Shape wrapper)
+  - Shape.js (Phaser.Graphics wrapper)
 - load layout config file
   ```javascript
   // at previous game state
