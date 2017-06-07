@@ -46,7 +46,8 @@ layout for Phaser by YAML config file, only support mobile devices
       },
     }
   ```
-- get sprite refrence by name
+- get sprite refrence by name  
+
   ```javascript
     create: function () {
         this._super.create();
