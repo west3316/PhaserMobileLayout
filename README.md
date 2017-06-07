@@ -69,6 +69,9 @@ layout for Phaser by YAML config file, only support mobile devices
 # How to cofig
 See [HowToConfig.md]()
 
+# Public License
+[WTFPL](http://www.wtfpl.net/)
+
 
 
 
