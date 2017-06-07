@@ -1,0 +1,59 @@
+res:
+  image:
+    bgImage: assets/image/bg.jpg
+    pmlImage: assets/image/pml.png
+
+layout:
+  - sprite:
+      name: bg
+      key: bgImage
+      # tint: 0x338888
+  - shape:
+      name: panel
+      # draw shape style
+      draw: Rect
+      width: 900
+      height: 200
+      fillColor: "#333333"
+      fillAlpha: .6
+      # lineAlpha: 0
+      # for autoAlign()
+      area:
+        # default: x = 0, y = 0
+        xalign: center
+        yalign: middle
+        width: 1280
+        height: 720
+  - text:
+      name: label
+      text: Hello World
+      style:
+        fill: "#fff"
+        fontSize: 70
+      area:
+        xalign: center
+        yalign: middle
+        width: 1280
+        height: 720
+
+  - group:
+      x: 170
+      name: somePicGroup
+      children:
+          # refrence to `picSprite`
+        - child: picSprite
+        - sprite:
+            key: pmlImage
+            width: 50
+            height: 50
+            # this.world.x = parentGroup.x + this.x
+            x: 20
+
+  - sprite:
+      # not display, unless refrence this name 
+      ref: true
+      name: picSprite
+      key: pmlImage
+      x: 200
+      y: 10
+      tint: 0x008822
