@@ -16,7 +16,7 @@ layout for Phaser by YAML config file, only support mobile devices
   - UIConfig.js (parse config)
   - UICreator.js (create Phaser object by UIConfig result)
 - load layout config file
-  ```javasciprt
+  ```javascript
   // at previous game state
   this.game.load.text("MyScene", "assets/layout/MyScene.yaml");
   ```
@@ -53,10 +53,10 @@ layout for Phaser by YAML config file, only support mobile devices
         this._super.create();
         
         // get background sprite by config name attr
-        var bgSprite = this.get("bg");
-        // var bgSprite = this.get("背景");
+         var bgSprite = this.get("bg");
+         // var bgSprite = this.get("背景");
         
-        // TODO: add control for display things
+         // TODO: add control for display things
     },
   ```
   
